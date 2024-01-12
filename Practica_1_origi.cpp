@@ -22,13 +22,23 @@ int main(int argc, char *argv[]) {
 	//asignar los valores maximos para unsigned int y int
 	numero_entero=2147483647;
 	cout <<"Numero entero " <<numero_entero<<endl;
+	
 	/*numero_entero_s=2147483647;
 	cout <<"Numero entero " <<numero_entero_s<<endl;
 	//asignar los valores maximos para unsigned int y int
 	numero_entero_p1=numero_entero_p; //NO es correcta!. 
 	cout <<"Numero entero pequeño 1ra asignacion " <<numero_entero_p1<<endl;*/
 	
-	
+	//asignacion de valores
+	numero_entero_p1 = numero_entero_p;//no es correcta!. Los valores sn correctos?
+	cout << "Numero entero pequeño 1ra asignacion: "<<numero_entero_p1<<endl;
+	/*Rango del short int = -32768 al 32767 // unsigned short int = limite de 0 a 65535*/
+	numero_entero_p=32767;
+	numero_entero_p1 = numero_entero_p;//no es correcta!. Los valores son correctos?
+	cout << "Numero entero pequeño 2da asignacion: "<<numero_entero_p1<<endl;
+	numero_entero_p=32760;
+	numero_entero_p1 = numero_entero_p;//Si es correcta. Los valores son correctos?
+	cout << "Numero entero pequeño 2da asignacion: "<<numero_entero_p1<<endl;	
 	
 	
 	return 0;
